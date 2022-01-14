@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    height: 200vh;
+}
+
+header {
+    background-color: #4A40EE;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+
+.nav__brand {
+    margin-top: 13px;
+}
+
+.nav__links {
+    display: flex;
+}
+
+.nav__links nav {
+    display: flex;
+    margin-left: 50px;
+}
+
+.nav__links li {
+    list-style: none;
+    margin-left: 29px;
+    margin-top: 13px;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Muller', sans-serif;
+    opacity: .5;
+    transition: .3s
+}
+
+.nav__links a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    transition: width .3s ease-in-out;
+}
+
+.nav__links a:hover:after,
+.nav__links a:focus:after {
+    width: 100%;
+}
+
+.nav__links a:hover,
+.nav__links a:focus {
+    opacity: 1;
+}
+
+.nav__reg {
+    margin-left: 40px;
+}
+
+.nav__reg button {
+    background: none;
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__reg button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.header__line {
+    margin-top: 30px;
+}
+
+.header__line hr {
+    opacity: .2;
+}
+
+.info__block {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 110px;
+    background-color: #4A40EE;
+    padding-top: 60px;
+}
+
+.info__container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.block__online {
+    position: relative;
+    display: flex;
+}
+
+.radial {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: red;
+    margin-right: 14px
+}
+
+.online__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    background: #E0E0E033;
+    ;
+    padding: 14px 3px;
+    border-radius: 20px;
+    min-width: 150px;
+    font-family: 'Muller';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.block__online p {
+    font-family: 'Muller';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 16px;
+
+}
+
+.block__title h1 {
+    font-family: 'Russo One';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #fff;
+    margin-top: 39px;
+}
+
+.block__subtitle {
+    display: flex;
+}
+
+.block__subtitle p {
+    font-family: 'Muller';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff;
+    margin-top: 70px;
+    margin-left: 32px;
+    max-width: 490px
+}
+
+.block__reg button {
+    padding: 22px 40px;
+    background-color: #fff;
+    border-radius: 35px;
+    border: none;
+    color: #000;
+    font-size: 22px;
+    margin-top: 81.1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.block__reg button:hover {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.after__course {
+    max-width: 100%;
+    background-color: #fff;
+    margin-top: 109px;
+}
+
+.course__container {
+    width: auto;
+    padding-bottom: 100px;
+}
+.course__card_item {
+    display: flex;
+}
+.course__card {
+    width: 270px;
+    height: 243px;
+    border: 1px solid #4A40EE1A;
+    border-radius: 10px;
+    padding-left: 41px;
+    padding-top: 31px;
+    margin-left: 30px;
+    margin-top: 32px;
+}
+/* .course__card:first-child {
+    margin-left: 0;
+} */
+.course__intro h1 {
+    font-family: 'Russo One';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #403E5C;
+}
+.course__card p {
+    max-width: 158px;
+    color: black;
+    font-family: 'Muller';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 32px;
+}
+.how__use {
+    margin-bottom: 30px;
+}
+.use__container {
+    padding-bottom: 100px;
+}
+.use__intro h1 {
+    font-family: 'Russo One';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #403E5C;
+}
+.use__cards {
+    display: flex;
+}
+.use__card {
+    width: 300px;
+    height: 332px;
+    margin-left: 30px;
+    margin-top: 119px;
+}
+.use__card h1 {
+    margin-top: 54.5px;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #2C2B37;
+}
+.use__card p {
+    margin-top: 14px;
+    font-family: 'Muller';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666576;
+}
+.webinar {
+    padding-top: 50px;
+    /* width: 100%;*/
+    margin: 0 auto; 
+    padding-bottom: 109px;
+    background-color: #4A40EE;
+}
+.webinar__container {
+    padding-bottom: 377px;
+    background-color: #4A40EE;
+    width: 100%;
+}
+.webinar__block_online {
+    display: flex;
+    justify-content: space-between;
+}
+.web__intro h1 {
+    font-family: 'Russo One';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.webinar__cards {
+    display: flex;
+    margin-top: 50px;
+}
+.web__card {
+    width: 370px;
+    height: 197px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-left: 43px;
+    padding-top: 22px;
+    margin-left: 30px;
+}
+/* .web__card:first-child {
+    margin-left: 0px;
+} */
+.web__card h3 {
+    font-family: 'Russo One';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #4A40EE;
+}
+.web__card p {
+    color: #666576;
+    font-family: 'Muller';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.web__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 79px;
+}
+.web__button button {
+    background-color: #CCFF00;
+    padding: 21px 39px;
+    color: #000;
+    border: 0 none;
+    border-radius: 40px;
+    font-family: 'Muller';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.web__lesson {
+    margin-top: 119px;
+}
+.lesson__intro h1{
+    font-family: 'Russo One';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #403E5C;
+}
+.lesson__table {
+    margin-top: 62px;
+}
+.lesson__table hr {
+    color: #000000;
+    margin-bottom: 29.73px;
+}
+.lesson__table p {
+    font-family: 'Muller';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30.4px;
+    color: #2F2D41;
+}
+.speakers {
+    margin-top: 145px;
+}
+.speak__intro {
+    display: flex;
+    justify-content: space-between;
+}
+.speaker__left h1 {
+    font-family: 'Russo One';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #403E5C;
+}
+.speaker__right {
+    display: flex;
+}
+.speaker__right h1{
+    font-family: 'Russo One';
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #4A40EE;
+}
+.speaker__right p {
+    font-family: 'Muller';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #686868;
+    margin-left: 14px;
+}
+.speakers__cards {
+    display: flex;
+    justify-content: center;
+}
+.sp_card {
+    margin-top: 83px;
+    margin-left: 90px;
+}
+/* .sp_card:first-child {
+    margin-left: 0px;
+} */
+.sp_card h3 {
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #2F2D41;
+    margin-top: 34px;
+}
+.sp_card p {
+    font-family: 'Muller';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666576;
+    margin-top: 13px;
+}
+
+
+@media (max-width: 1064px) {
+    .nav__reg {
+        margin-left: 10px;
+    }
+
+    .nav__links nav {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    * {
+        max-width: 100%;
+    }
+    .nav__links {
+        display: none;
+    }
+
+    .nav__reg {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .course__card_item {
+        flex-direction: column;
+    }
+    .course__card {
+            width: 82%;
+            /* display: flex; */
+            margin: 0 auto;
+            margin-bottom: 50px;
+    }
+    .use__cards {
+        flex-direction: column;
+        /* margin: 30px 0 30px 0; */
+    }
+    .use__card {
+        margin: 0 auto;
+        
+    }
+    .webinar__block_online {
+        flex-direction: column;
+    }
+    .webinar__cards {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .web__card {
+        margin-top: 30px;
+    }
+    .speak__intro {
+        flex-direction: column;
+    }
+    .speakers__cards {
+        flex-direction: column;
+    }
+}
